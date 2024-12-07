@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import './colors.css';
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--light-brown);
+    min-height: calc(100vh - 5rem);
+    position: relative;
+    padding-bottom: 5rem !important;
+    display:inline-block;
+    width:100%;
+}
+
+nav {
+    background-color: var(--white);
+}
+
+nav .title {
+    padding: 0.77rem;
+    padding-left: 0;
+    color: var(--orange);
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .logo {
+    height: 1.75rem;
+    margin-left: 0.75rem;
+}
+
+nav form {
+    display: inline;
+    float: right;
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+nav .search-box {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.25rem 0.75rem;
+}
+
+nav .search-box:focus {
+    outline: none !important;
+    border: 1px solid var(--orange);
+}
+
+section {
+    margin: 0;
+    padding: 1rem 0; 
+}
+
+.heading {
+    text-align: center;
+    margin-top: 2rem; 
+    margin-bottom: 3rem; 
+}
+
+.container {
+    margin-top: 1rem; 
+}
+
+section p {
+    margin: 0; 
+    padding-top: 2rem; 
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-bottom: 1rem;
+    }
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    width: calc(100% - 1.5rem);
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:836px){
+    footer h1{
+        display:none;
+    }
+    footer {
+        flex-direction:column;
+        gap:0.7rem
+    }
+    body {
+        min-height:calc(100vh-10rem) !important;
+        padding-bottom: 10rem !important
+    }
+}
+
+@media screen and (max-width:750px){
+    nav{
+      display:inline-block;
+      width:100%;     
+    }
+    nav form{
+        float:none;
+        display:flex;
+        gap:0.75rem
+        flex-wrap:wrap;
+        justify-content:center
+
+    }
+}

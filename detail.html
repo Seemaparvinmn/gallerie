@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery|phtoto search  app</title>
+    <link rel="Stylesheet" href="./assets/common.css"/>
+  
+    <link rel="Stylesheet" href="./assets/detail.css"/>
+    
+    
+
+</head>
+<body>
+
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="./">
+            <img src="./assets/logo.png" alt="Gallerie Logo" class="logo" />
+        </a>
+        <a href="./">
+            <h1 class="title">GALLERIE</h1>
+        </a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search-box" placeholder="Search anything" />
+            <input type="submit" value="SEARCH" class="search-button" />
+        </form>
+        
+    </nav>
+
+    <!---- main section -->
+    <section>
+        <h1 class="heading">&lt; DETAIL FOR -<span id="image_id"></span>/&gt;</h1>
+        <div class="detail">
+            <img id="detail_image" alt="primary"/>
+            <div class="content">
+                <h1 class="description"     id="description_text"></h1>
+                <br/>
+                <h3>uploaded by-@<span id ="username"></span></h3>
+                <br/>
+                <h4>Data - <span id ="upload_date"> </span></h4>
+                <br/>
+                <h5><span id="like_count"></span>likes(<span id="view_count"></span>Views)</h5>
+                <br/>
+                <hr/>
+                <br/>
+                <h1 class="description"      id="alt_description"></h1>
+                <br/>
+                <br/>
+                <br/>
+                <h5>Base color</h5>
+                <br/>
+                <div class="image_color" id="image_color">
+                 <span id="color_text"> </span>
+                </div> 
+                <br/>
+                <br/>
+                <a target="_blank"id="download_link" class="button">&lt;DOWLOAD/&gt;</a>
+
+                <!---Date-->
+                <!---like and view count-->
+                <!--alternate Description-->
+                <!--color of the image-->
+                <!--download-->
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--footer of the page-->
+
+    <footer>
+        <!-- Add footer content here -->
+         <a href="./"><h5>Gallerie</h5></a>
+         <h1>|</h1>
+         <h5> Designed and developed by aayush & team </h5>
+         <h1>|</h1>
+         <a href="./"><h5>Gitub</h5></a>
+         <h1>|</h1>
+        <p>&copy; 2024 Gallerie. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/common.js"></script>
+    <script src="./assets/detail.js"></script>
+    
+</body>
+</html>
